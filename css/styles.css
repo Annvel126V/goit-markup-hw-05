@@ -154,6 +154,9 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     }
+    .caption-img{
+        max-width: 1440px;
+    }
 
     .caption-tekst{
     font-weight: 700;
@@ -537,3 +540,23 @@ body{
    .footer-box{
     margin-right: 120px;
    }
+   .modal-overlay{
+    background-color: rgba(46, 47, 66, 0.4);  
+    position: fixed;
+    top: 80px;
+    left: 516;
+    width: 1440px;
+    height: 672px;
+    display: flex;
+    justify-content: center;
+}
+.modal{
+    background-color: #E7E9FC;
+    border-radius: 4px;
+    padding: 16px;
+    max-width: 408px;
+    max-height: 592px;
+    overflow-y: auto;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+}
