@@ -548,7 +548,7 @@ body{
     color: #fff;
     padding-left: 80px;
    }
-   .form-subscribe{
+   input:checked + label > span{
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
@@ -558,20 +558,11 @@ body{
     padding-left: 80px;
    }
    .form-subscribe-footer{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #fff;
-    width: 36px;
-    height: 24px;
-   }
-   .subscribe-button{
-    position: fixed;
     display: flex;
-    right: 159px;
-    bottom: 132px;
+    gap: 16px;
+   }
+   .button{
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -581,6 +572,7 @@ body{
     width: 165px;
     height: 40px;
     background: #4d5ae5;
+    padding-left: 20px;
    }
    .subscribe-button-text{
     font-family: "Roboto", sans-serif;
@@ -667,7 +659,7 @@ body{
       letter-spacing: 0.02em;
       text-align: center;
       color: #2e2f42; 
-      padding-top: 72px;
+      
     }
      .form-modal{
       display: flex;
@@ -686,10 +678,9 @@ body{
       line-height: 1.16667;
       letter-spacing: 0.04em;
       color: #8e8f99;
-      padding-left: 24px;
-      padding-top: 16px;
+      
     }
-    .modal-input{
+    .input:checked + label > span{
       border: 1px solid rgba(46, 47, 66, 0.4);
       border-radius: 4px;
       width: 360px;
@@ -709,6 +700,10 @@ body{
      .modal-icon-text:hover,
      .modal-icon-text:focus{
       fill: #4d5ae5;
+     }
+     .checkbox{
+      width: 360px;
+      height: 16px;
      }
      .checkbox-modal{
       border-radius: 2px;
@@ -736,18 +731,16 @@ body{
       color: #4d5ae5;
     }
       
-      .modal-button{
+      .button{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        padding-left: 119px;
-        padding-bottom: 24px;
+       
         gap: 10px;
         border-radius: 4px;
-        padding: 16px 32px;
-        width: 169px;
-        height: 56px;
+       
+       
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background: #4d5ae5;
       }
