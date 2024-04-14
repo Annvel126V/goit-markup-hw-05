@@ -360,6 +360,9 @@ body{
      color: #434455; 
        
     }
+    .team-icon{
+      margin-top: 8px;
+    }
     .portfolio{
       padding-top: 120px;
       padding-bottom: 120px;
@@ -614,7 +617,12 @@ body{
     height: 40px;
     background: #4d5ae5;
     border: none;
-    
+    transition: backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .subscribe-button-text:hover,
+   .subscribe-button-text:focus {
+    background-color: #404bbf;
+
    }
    .subscribe-button-icon{
     width: 24px;
@@ -729,16 +737,31 @@ body{
     .modal-icon{
       position: relative;
     }
+    textarea {
+      resize: none;
+    }
     .modal-input{
       margin-bottom: 8px;
     }
-
-    .input:checked + label > span{
-      border: 1px solid rgba(46, 47, 66, 0.4);
-      border-radius: 4px;
-      width: 360px;
-      height: 40px; 
+    .modal-feilid::placeholder{
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16;
+      padding-left: 16px;
+      padding-top: 8px;
+      letter-spacing: 0.04em;
+      color: rgba(46, 47, 66, 0.4);  
     }
+    .input-check::cheked + .input-check-text{
+      background-color: #404BBF;
+      border: none;
+      fill: #fff;
+      
+    }
+
+   
+    
      .modal-icon-text{
       position: absolute;
       top: 50%;
@@ -766,9 +789,11 @@ body{
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       font-size: 12px;
-      line-height: 1.16667;
+      line-height: 1.16;
       letter-spacing: 0.04em;
       color: #8e8f99;
+      margin-top: 16px;
+      
     }
       .input-check-link{      
       line-height: 1.33;
@@ -782,38 +807,22 @@ body{
       border: 1px solid rgba(46, 47, 66, 0.4);
       width: 16px;
       height: 16px;
+      margin-top: 11px;
+      margin-right: 8px;
+      fill: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
      }
      .check-empty:hover,
      .check-empty:focus{
-      fill: #404bbf;
-      border: 1px solid #404bbf;
-      background-color: #404bbf;
-
-     }
-
-     .imput-check-icon{
-      border-radius: 2px;
-      width: 10px;
-      height: 8px;
-      opacity: 0;
-      visibility: hidden;
-      position: none;
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
-     .imput-check-icon:hover,
-     .imput-check-icon:focus{
-      opacity: 1;
-      visibility: visible;
       fill: #f4f4fd;
+      background-color: #404BBF;
+
      }
-      
-      
-     
-     
-      
-      
-      .modal-button-text{
+
+        .modal-button-text{
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -821,7 +830,10 @@ body{
         letter-spacing: 0.04em;
         text-align: center;
         color: #fff;
-        display: flex;
+        display: block;
+        margin-left: auto;
+        margin-top: 24px;
+        margin-right: auto;
         align-items: center;
         justify-content: center;
         flex-direction: row;
@@ -830,6 +842,7 @@ body{
         padding: 16px 32px;
         width: 169px;
         height: 56px;
+        border: none;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background: #4d5ae5;
        
