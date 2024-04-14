@@ -554,9 +554,20 @@ body{
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    padding-top: 16px;
-    padding-left: 80px;
+
    }
+   .placeholder{ 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+      
+
+    }
+    
+   
    .form-subscribe-footer{
     display: flex;
     gap: 16px;
@@ -606,7 +617,9 @@ body{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .modal{
+        padding: 72px 24px 24px;
         position: absolute; 
+        box-shadow:  0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
         top: 50%;  
         left: 50%;
         transform: translate(-50%, -50%) scale(1); 
@@ -701,35 +714,66 @@ body{
      .modal-icon-text:focus{
       fill: #4d5ae5;
      }
-     .checkbox{
+     .modal-field check-field{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 8px;
+      border-radius: 4px;
       width: 360px;
       height: 16px;
      }
-     .checkbox-modal{
-      border-radius: 2px;
-      border: 1px solid rgba(46, 47, 66, 0.4);
-      
-      
-      
-     }
-     .checkbox-text{
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 16px;
-      flex-direction: row;
-      width: 16px;
-      height: 16px;
-      border-radius: 2px;
-      border: 1px solid rgba(46, 47, 66, 0.4);
-      color: #2e2f42;
-      transition: backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     .input-check-text{
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16667;
+      letter-spacing: 0.04em;
+      color: #8e8f99;
     }
-    .checkbox-text:hover{
+      .input-check-link{      
       line-height: 1.33;
       text-decoration: underline;
       text-decoration-skip-ink: none;
       color: #4d5ae5;
-    }
+    
+     }
+     .check-empty{
+      border-radius: 2px;
+      border: 1px solid rgba(46, 47, 66, 0.4);
+      width: 16px;
+      height: 16px;
+      fill: none;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+     }
+     .check-empty:hover,
+     .check-empty:focus{
+      fill: #404bbf;
+      border: 1px solid #404bbf;
+      background-color: #404bbf;
+
+     }
+
+     .imput-check-icon{
+      border-radius: 2px;
+      width: 10px;
+      height: 8px;
+      opacity: 0;
+      visibility: hidden;
+      position: none;
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+     .imput-check-icon:hover,
+     .imput-check-icon:focus{
+      opacity: 1;
+      visibility: visible;
+      fill: #f4f4fd;
+     }
+      
+      
+     
+     
       
       
       .modal-button-text{
