@@ -760,6 +760,9 @@ body{
        textarea:focus{
         border-color: #4D5AE5; 
   }
+  .check-field{
+    margin-bottom: 24px;
+  }
     .modal-input{
       margin-bottom: 8px;
     }
@@ -814,6 +817,7 @@ body{
       letter-spacing: 0.04em;
       color: #8e8f99;
       margin-bottom: 24px;
+      line-height: 1.17;
       
     }
       .input-check-link{      
@@ -836,7 +840,11 @@ body{
       justify-content: center;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
-     
+     .check-empty:checked{
+      background-color:  #404bbf;
+      border: none; 
+      fill: #F4F4FD;
+     }
 
         .modal-button-text{
         font-family: "Roboto", sans-serif;
@@ -859,6 +867,7 @@ body{
         min-width: 169px;
         height: 56px;
         border: none;
+        cursor: pointer;
         background-color: #4D5AE5;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
