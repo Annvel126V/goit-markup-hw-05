@@ -843,7 +843,7 @@ body{
       justify-content: center;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
-     .input-check::cheked + .check-empty{
+     .input-check + .input-check-text > .check-empty{
       background-color: #404bbf;
       border: none; 
       fill: #F4F4FD;
