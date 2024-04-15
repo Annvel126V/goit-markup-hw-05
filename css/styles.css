@@ -764,7 +764,7 @@ body{
     margin-bottom: 24px;
   }
     .modal-input{
-      margin-bottom: 8px;
+      margin-bottom: 16px;
     }
     .modal-feilid::placeholder{
       font-family: "Roboto", sans-serif;
@@ -841,7 +841,7 @@ body{
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
      .check-empty:checked{
-      background-color:  #404bbf;
+      background-color: #404bbf;
       border: none; 
       fill: #F4F4FD;
      }
