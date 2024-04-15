@@ -153,6 +153,7 @@ body{
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
+    background-image: url(../images/people-office.jpg)
     }
     .caption-img{
         max-width: 1440px;
