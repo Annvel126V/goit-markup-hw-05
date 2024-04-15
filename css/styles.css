@@ -764,6 +764,9 @@ body{
     margin-bottom: 24px;
   }
     .modal-input{
+      margin-bottom: 8px;
+    }
+    .modal-input-comment{
       margin-bottom: 16px;
     }
     .modal-feilid::placeholder{
@@ -840,7 +843,7 @@ body{
       justify-content: center;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
-     .check-empty:checked{
+     .input-check::cheked + .check-empty{
       background-color: #404bbf;
       border: none; 
       fill: #F4F4FD;
